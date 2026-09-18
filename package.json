@@ -1,0 +1,26 @@
+{
+  "name": "designai",
+  "private": true,
+  "version": "2.0.0",
+  "packageManager": "pnpm@9.15.9",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "typecheck": "turbo run typecheck",
+    "db:generate": "pnpm --filter @designai/db generate",
+    "db:migrate": "pnpm --filter @designai/db migrate",
+    "db:studio": "pnpm --filter @designai/db studio",
+    "db:seed": "pnpm --filter @designai/db seed",
+    "docker:up": "docker compose up -d",
+    "docker:down": "docker compose down",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\""
+  },
+  "devDependencies": {
+    "prettier": "^3.3.3",
+    "turbo": "^2.3.3",
+    "typescript": "^5.7.2"
+  }
+}

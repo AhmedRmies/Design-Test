@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #ffffff;
+  --fg: #0b0f17;
+  --muted: #6b7280;
+  --border: #e5e7eb;
+}
+
+.dark {
+  --bg: #0b0f17;
+  --fg: #f5f7fa;
+  --muted: #9aa4b2;
+  --border: #1f2937;
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+}
+
+.canvas-shell {
+  background: radial-gradient(circle at 50% 30%, #f3f6fb 0%, #dfe6f1 60%, #cbd5e5 100%);
+}
+
+.dark .canvas-shell {
+  background: radial-gradient(circle at 50% 30%, #182031 0%, #10161f 60%, #0b0f17 100%);
+}

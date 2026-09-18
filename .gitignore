@@ -1,0 +1,17 @@
+node_modules/
+.next/
+dist/
+build/
+out/
+coverage/
+.turbo/
+*.log
+.env
+.env.local
+.env.*.local
+!.env.example
+.DS_Store
+*.pem
+!**/public/**/*.pem
+.vercel
+prisma/dev.db*
